@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.barra {
+    width: 100vw;
+    height: 270px; /* a barra É a i3magem */
+    background-image: url("madison\ beer.jpg");
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: rgba(255, 255, 255, 0.616);
+    font-size: 3em; 
+    text-align: center; 
+    text-shadow: 2px 2px 20px black;
+}
+
+.barra::before {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    height: 270px;
+    background: rgba(0, 0, 0, 0.6); 
+}
+
+.tracking-in-contract {
+	animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+.animacao, .animacao1, .animacao2, .animacao4 {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 600ms ease, transform 600ms ease;
+  will-change: opacity, transform;
+}
+
+.animacao.visivel, .animacao1.visivel, .animacao2.visivel, .animacao4.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body {
+  background-image: url("fundo1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+body::before {
+  content: "";
+    position: absolute;
+    inset: 0px;
+    height: 1000px;
+    background-color: transparent;
+}
+
+.madisonn {
+  width: 300PX;
+  border-radius: 20px;
+}
+
+.texto {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  font-size: 20px;
+  
+
+}
+
+.texto2 {
+  font-size: 20px;
+}
+.madison3{
+
+  width: 300px ;
+  border-radius: 30px;
+  background: center;
+
+}
